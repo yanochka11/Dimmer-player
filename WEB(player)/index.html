@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimmers Player</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="1.png" alt="Dimmers Logo" class="logo"> <!-- Update with the path to your logo image -->
+    <h1 class="title">Dimmers</h1>
+  </header>
+  <div class="upload-container">
+    <label for="videoUpload" class="upload-label">
+      <i class="material-icons">file_upload</i>
+      Upload Video
+    </label>
+    <input type="file" id="videoUpload" accept="video/*" hidden>
+  </div>
+  <div class="video-container" style="display:none;">
+    <video class="main-video" controls>
+      <!-- Video source will be set here -->
+    </video>
+    <!-- Custom controls can be added here if needed -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
